@@ -28163,3 +28163,37 @@ img {
 
 /* Ensure Elementor Icons load correctly */
 .elementor-icon i { display: inline-block !important; }
+
+/* ULTIMATE DROPDOWN & TRANSPARENCY ENFORCER */
+.elementskit-submenu-panel, .sub-menu, .elementor-nav-menu--dropdown {
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-top: 3px solid #0eb290 !important;
+    border-radius: 0 0 12px 12px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+    padding: 15px 0 !important;
+    min-width: 220px !important;
+}
+
+.elementskit-submenu-panel li a, .sub-menu li a {
+    color: #ffffff !important;
+    padding: 12px 25px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    text-transform: none !important;
+}
+
+.elementskit-submenu-panel li a:hover, .sub-menu li a:hover {
+    background: rgba(14, 178, 144, 0.1) !important;
+    color: #0eb290 !important;
+    padding-left: 30px !important;
+}
+
+/* Ensure Header is Transparent over Hero */
+#site-header, .elementor-section.elementor-sticky--active {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
