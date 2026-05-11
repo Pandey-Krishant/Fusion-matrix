@@ -42,7 +42,9 @@ function initMobileMenu() {
       menuContainer.classList.toggle('elementskit-menu-offcanvas-elements-open', isOpen);
       if (overlay) {
         overlay.style.display = isOpen ? 'block' : 'none';
-        overlay.style.opacity = isOpen ? '1' : '0';
+        setTimeout(() => {
+            overlay.style.opacity = isOpen ? '1' : '0';
+        }, 10);
       }
       document.body.style.overflow = isOpen ? 'hidden' : '';
     };
@@ -50,8 +52,28 @@ function initMobileMenu() {
     hamburger.addEventListener('click', () => toggleMenu(true));
     if (closeBtn) closeBtn.addEventListener('click', () => toggleMenu(false));
     if (overlay) overlay.addEventListener('click', () => toggleMenu(false));
+
+    // Submenu Toggle Logic for Mobile
+    const dropdownToggles = menuContainer.querySelectorAll('.elementskit-menu-dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+          e.preventDefault();
+          const parentLi = toggle.closest('.elementskit-dropdown-has');
+          if (parentLi) {
+            parentLi.classList.toggle('open');
+            // Close other open submenus at the same level
+            const siblings = parentLi.parentNode.querySelectorAll(':scope > .elementskit-dropdown-has.open');
+            siblings.forEach(sibling => {
+                if (sibling !== parentLi) sibling.classList.remove('open');
+            });
+          }
+        }
+      });
+    });
   }
 }
+
 
 function initCounters() {
   const counters = document.querySelectorAll('.elementor-counter-number');
