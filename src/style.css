@@ -26452,9 +26452,6 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown
 .trust-wallet-one-tap .button .button-text { color: rgb(255, 255, 255); font-size: 16px; font-weight: 600; line-height: 20px; }
 .trust-wallet-one-tap .footer { margin: 20px 30px; }
 .trust-wallet-one-tap .check-icon { color: rgb(255, 255, 255); }
-@font-face { font-family: Binance; src: url("chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; }
-@font-face { font-family: Binance; src: url("chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; }
-@font-face { font-family: Binance; src: url("chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf") format("opentype"); font-weight: 600; font-style: normal; }
 #u363udm0100c1778480922155 { outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: auto 0px 0px auto !important; position: fixed !important; border: 0px !important; min-height: 0px !important; min-width: 0px !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: auto !important; display: none !important; z-index: 2000000000 !important; cursor: none !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; clip: auto !important; color-scheme: light !important; }
 .tawk-button-hover[data-v-2fc2d95d]:focus, .tawk-button-hover[data-v-2fc2d95d]:hover { background-color: rgba(255, 255, 255, 0.2) !important; border-radius: 5px !important; }
 @keyframes tawkMaxOpen { 
@@ -27095,7 +27092,6 @@ body .is-layout-grid { display: grid; }
 .has-large-font-size { font-size: var(--wp--preset--font-size--large) !important; }
 .has-x-large-font-size { font-size: var(--wp--preset--font-size--x-large) !important; }
 .elementskit-reset-button.elementor-button { cursor: pointer; width: 100%; }
-@font-face { font-family: FigtreeVF; src: url("chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2") format("woff2-variations"); font-weight: 100 1000; font-display: swap; }
 #om-campaign-1 { --om-color-0: #f2f2f2; --om-color-1: #727272; --om-color-2: #8c8c8c; --om-color-3: #a5a5a5; --om-color-4: #bfbfbf; --om-color-5: rgb(255, 255, 255); --om-color-6: #b6bfba; --om-color-7: #9da6a2; --om-color-8: #373737; --om-font-0: 'Montserrat'; --om-font-1: 'Source Sans 3'; }
 #om-campaign-1 .om-color-palette-main { color: var(--om-color-0) !important; }
 #om-campaign-1 .om-color-palette-c0 { color: var(--om-color-0) !important; }
